@@ -35,7 +35,8 @@ Specifically, we plan to use Ridge regression, Lasso regression, Gradient boosti
    * <details>
      <summary>Click to Expand Image</summary>
       <img width="400" alt="Screenshot 2024-12-16 at 6 32 09 PM" src="https://github.com/user-attachments/assets/3a6a5c6f-5d0d-4241-bb72-537257e0af97" />
-
+* Ridge Regression V.S Lasso Regression
+  Lasso Regression was chosen because of two main reasons. First, 
 
 
 
