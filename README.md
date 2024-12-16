@@ -1,1 +1,1 @@
-# Machine_Learning_P2P_Lending_Platform
+# All LendingClub loan ABS tranches analysis
