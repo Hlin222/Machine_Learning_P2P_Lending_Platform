@@ -21,3 +21,22 @@ Specifically, we plan to use Ridge regression, Lasso regression, Gradient boosti
 * After converting categorical data into dummy variables, the dataset expanded to 2,260,451 rows × 247 columns. This enormous dataset imposed two key limitations:​
     * Random Forest and Gradient Boosting Models: We were unable to set the `max_depth` parameter higher than 10 due to computational constraints.​
     * Neural Network Models: The number of layers in our neural networks had to be restricted, limiting model complexity.​
+
+## Model Setup
+
+### Linear Approach: Standardized Lasso Regression
+* Density Plot
+   * <details>
+     <summary>Click to Expand Image</summary>
+      <img width="400" alt="Screenshot 2024-12-16 at 6 22 09 PM" src="https://github.com/user-attachments/assets/b2f4116a-556c-465a-ba4e-b93b15b653d6" />
+  * <details>
+     <summary>Click to Expand Image</summary>
+      <img width="400" alt="Screenshot 2024-12-16 at 6 30 57 PM" src="https://github.com/user-attachments/assets/e8095dbd-a81d-4e71-908d-c48868f30cb6" />
+   * <details>
+     <summary>Click to Expand Image</summary>
+      <img width="400" alt="Screenshot 2024-12-16 at 6 32 09 PM" src="https://github.com/user-attachments/assets/3a6a5c6f-5d0d-4241-bb72-537257e0af97" />
+
+
+
+
+
