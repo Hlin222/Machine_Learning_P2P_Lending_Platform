@@ -22,6 +22,62 @@ Specifically, we plan to use Ridge regression, Lasso regression, Gradient boosti
     * Random Forest and Gradient Boosting Models: We were unable to set the `max_depth` parameter higher than 10 due to computational constraints.​
     * Neural Network Models: The number of layers in our neural networks had to be restricted, limiting model complexity.​
 
+| **Column Name**              | **Description**                                                                 |
+|------------------------------|---------------------------------------------------------------------------------|
+| `id`                         | Unique identifier for each loan application.                                     |
+| `loan_amnt`                  | The loan amount requested by the borrower.                                       |
+| `funded_amnt`                | The total amount funded by investors for the loan.                               |
+| `funded_amnt_inv`            | The portion of the loan funded by individual investors.                          |
+| `term`                       | The duration of the loan (e.g., 36 months or 60 months).                         |
+| `int_rate`                   | The interest rate on the loan.                                                   |
+| `installment`                | The monthly payment amount the borrower must pay.                                |
+| `grade`                      | The loan grade assigned by Lending Club (A, B, C, etc.).                         |
+| `sub_grade`                  | The subgrade for the loan (e.g., A1, B2, etc.).                                  |
+| `home_ownership`             | The borrower's homeownership status (e.g., Own, Rent, Mortgage).                 |
+| `annual_inc`                 | The borrower's self-reported annual income.                                      |
+| `verification_status`        | Indicates if the borrower's income was verified.                                 |
+| `issue_d`                    | The month and year the loan was issued.                                          |
+| `loan_status`                | The current status of the loan (e.g., Fully Paid, Charged Off).                  |
+| `pymnt_plan`                 | Indicates if the borrower is on a payment plan.                                  |
+| `url`                        | URL for the loan’s public Lending Club listing.                                  |
+| `purpose`                    | The purpose of the loan (e.g., debt consolidation, home improvement).            |
+| `zip_code`                   | The first three digits of the borrower’s zip code.                               |
+| `addr_state`                 | The U.S. state provided by the borrower in the loan application.                 |
+| `delinq_2yrs`                | The number of delinquencies in the borrower’s credit history over the last 2 years.|
+| `earliest_cr_line`           | The date the borrower’s earliest reported credit line was opened.                |
+| `fico_range_low`             | The lower bound of the borrower’s FICO score range at the time of application.   |
+| `fico_range_high`            | The upper bound of the borrower’s FICO score range at the time of application.   |
+| `inq_last_6mths`             | The number of credit inquiries the borrower had in the last 6 months.            |
+| `open_acc`                   | The number of open credit accounts the borrower has.                             |
+| `pub_rec`                    | The number of derogatory public records (e.g., bankruptcies, liens).             |
+| `revol_bal`                  | The borrower’s revolving balance (total credit card debt).                       |
+| `total_acc`                  | The total number of credit accounts the borrower has (open or closed).           |
+| `initial_list_status`        | The initial listing status of the loan (e.g., whole, fractional).                |
+| `out_prncp`                  | Remaining outstanding principal on the loan.                                     |
+| `out_prncp_inv`              | Remaining outstanding principal funded by individual investors.                  |
+| `total_pymnt`                | The total amount paid by the borrower.                                           |
+| `total_pymnt_inv`            | The total payment received by individual investors.                              |
+| `total_rec_prncp`            | The total amount of principal received on the loan.                              |
+| `total_rec_int`              | The total interest received on the loan.                                         |
+| `total_rec_late_fee`         | The total late fees received on the loan.                                        |
+| `recoveries`                 | The total amount recovered after the loan was charged off.                       |
+| `collection_recovery_fee`    | The fees paid for recovering the charged-off loan.                               |
+| `last_pymnt_amnt`            | The amount of the last payment received.                                         |
+| `last_credit_pull_d`         | The date when the borrower's credit was last pulled for review.                  |
+| `last_fico_range_high`       | The upper bound of the most recent FICO score range of the borrower.             |
+| `last_fico_range_low`        | The lower bound of the most recent FICO score range of the borrower.             |
+| `collections_12_mths_ex_med` | The number of collections in the past 12 months, excluding medical collections.   |
+| `policy_code`                | A code indicating the policy used for the loan.                                  |
+| `application_type`           | Indicates whether the loan is individual or joint.                               |
+| `acc_now_delinq`             | The number of accounts currently delinquent.                                     |
+| `chargeoff_within_12_mths`   | The number of charge-offs within the last 12 months.                             |
+| `delinq_amnt`                | The dollar amount of delinquent debt.                                            |
+| `tax_liens`                  | The number of tax liens on the borrower’s credit record.                         |
+| `hardship_flag`              | Indicates whether the borrower has claimed hardship.                             |
+| `disbursement_method`        | The method of loan disbursement (e.g., cash, direct pay).                        |
+| `debt_settlement_flag`       | Indicates if the borrower has entered into a debt settlement.                    |
+
+
 ## Model Setup
 
 ### Linear Approach: Standardized Lasso Regression
