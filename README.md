@@ -95,7 +95,7 @@ In this project, we applied a combination of supervised and unsupervised learnin
 ## Expected Return(including default and write off and exclusing current)
 
 * <details> 
-     <summary>Click to Expand Image</summary>
+     <summary>Expected Return Visualization</summary>
       <img width="1181" alt="Screenshot 2024-12-16 at 10 50 38 PM" src="https://github.com/user-attachments/assets/8298fedd-9c46-4b0b-85a4-b96c37cbe01a" />
       <img width="742" alt="Screenshot 2024-12-16 at 10 48 34 PM" src="https://github.com/user-attachments/assets/05f9f39f-0f8a-4f6b-b3c7-c848af68f12b" />
       <img width="1000" alt="Screenshot 2024-12-16 at 10 52 12 PM" src="https://github.com/user-attachments/assets/b9df133c-7b9b-464d-a2f3-588ccd010665" />
@@ -103,8 +103,16 @@ In this project, we applied a combination of supervised and unsupervised learnin
 When the grade of loans deteriorates, the distribution of returns becomes larger, which indicates that higher-grade loans have more stable returns. Additionally, as the grade of loans deteriorates, the percentage of charged-off loans increases. However, surprisingly, even with defaults and write-offs, there is a 50% recovery on the initial lending amount.
 
 We ran a generalized linear model with lasso regularization to predict the expected return.
-<img width="579" alt="Screenshot 2024-12-16 at 11 32 19 PM" src="https://github.com/user-attachments/assets/8631766b-220b-455c-b4db-a93907c5ce6c" />
+<details> 
+     <summary>Click to Expand Lasso</summary>
+      <img width="579" alt="Screenshot 2024-12-16 at 11 32 19 PM" src="https://github.com/user-attachments/assets/8631766b-220b-455c-b4db-a93907c5ce6c" />
 
+we get a RMSE of 0.2206, which is quite unaccurate. Then we run a gradient boosting model:
+<details> 
+     <summary>Click to Expand Gradient Boosting</summary>
+      <img width="555" alt="Screenshot 2024-12-17 at 12 14 28 AM" src="https://github.com/user-attachments/assets/186d5a10-bcab-491c-ab16-04202a43cdc0" />
+     <summary>Click to Expand Gradient Boosting Importance</summary>
+      <img width="244" alt="Screenshot 2024-12-17 at 12 14 54 AM" src="https://github.com/user-attachments/assets/c80ba758-dfcc-4da4-9be6-ac5004f82131" />
 
 ## Reference
 Chang, A. H., Yang, L. K., Tsaih, R. H., & Lin, S. K. (2022). Machine learning and artificial neural networks to construct P2P lending credit-scoring model: A case using Lending Club data. Quantitative Finance and Economics, 6(2), 303-325.​
