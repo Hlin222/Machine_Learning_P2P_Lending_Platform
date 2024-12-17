@@ -38,7 +38,9 @@ Specifically, we plan to use Ridge regression, Lasso regression, Gradient boosti
 * Ridge Regression V.S **Lasso Regression**
   
   Lasso Regression was chosen because of two main reasons. First, Lasso Regression can shrink some coefficients to exactly zero. This means Lasso can identify and eliminate redundant features, leading to a simpler and more interpretable model. This is very important for our dataset because there are many predictors in our dataset that are irrelevant, such as loan_amnt, funded_amnt, collection_recovery fee, and Lasso set their coefficients to exactly zero, and consider only significant features. Secondly, the Root MSE of Lasso Regression is 3. 514, which is lower than the Root MSE of Ridge Regression, which is 3.522, demonstrating that Lasso Regression have a higher accuracy.
-
+* Non-Standardized Lasso Regression V.S **Standardized Lasso Regression**
+  
+  Standardization rescales all predictor variables to have a mean of 0 and a standard deviation of 1. This makes sure that all variables contribute proportionally to the model, regardless of their original scale.​ Without standardization, variables with larger ranges would dominate the model's coefficients, while smaller-scale variables can be ignored.
 
 
 
