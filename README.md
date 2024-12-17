@@ -50,12 +50,22 @@ Specifically, we plan to use Ridge regression, Lasso regression, Gradient boosti
    * <details> n_estimators=100, ​max_depth=10
      <summary>Click to Expand Image</summary>
       <img width="384" alt="Screenshot 2024-12-16 at 9 59 50 PM" src="https://github.com/user-attachments/assets/1c18b3ab-6d93-4e33-bf12-4fd53b752898" />
+      
 
 * **Gradient Boosting** V.S Random Forest
   
   From Lasso regression, we observe large residuals. As an iterative method, GB is better at handling such issue by refining prediction.​ For Random forest, once trained, Random Forest trees do not adapt to errors. This independence limits its ability to focus on and correct large residuals effectively, making it less flexible than Gradient Boosting for iterative error correction.​ As our dataset is large enough, there is no concern of overfitting. Large 'n_estimators' also reduce the risk by lowering learning rate.
 
    With the same number of estimators, increasing tree depth increases model accuracy and R^2.​ Overall, random forest underperforms gradient boosting, which aligns with our previous analysis.
+
+* ** Gradient Boosting Result
+Predictions are generally well-aligned with the red "perfect prediction line," indicating great accuracy. Some spread is visible at higher interest rate.
+Based on the importance table, loan amount is the most significant feature, followed by annual income and revolving balance.
+Train RMSE of GB is 2.4, which is lower than that of lasso (3.5), indicating that GB provides more accurate predictions.
+
+
+
+![image](https://github.com/user-attachments/assets/4a791f43-3789-48fd-bfb3-f89a922f9ab8)
 
 
 ## Results
