@@ -92,6 +92,15 @@ The findings of our study are generally good with standardized lasso regression 
 ## Conclusion
 In this project, we applied a combination of supervised and unsupervised learning techniques to analyze asset-backed security (ABS) tranches within a peer-to-peer (P2P) lending platform. We identified  standardized lasso regression and gradient boosting to have the best predictive power. It suggests a large improvement from linear model to non-linear mode, reflecting the complexity of the dataset and the problem we want to address. While we use most methods learned in-class, we can adjust parameters in the future to get potentially better models. 
 
+## Expected Return(including default and write off and exclusing current)
+<img width="1181" alt="Screenshot 2024-12-16 at 10 50 38 PM" src="https://github.com/user-attachments/assets/8298fedd-9c46-4b0b-85a4-b96c37cbe01a" />
+<img width="742" alt="Screenshot 2024-12-16 at 10 48 34 PM" src="https://github.com/user-attachments/assets/05f9f39f-0f8a-4f6b-b3c7-c848af68f12b" />
+<img width="1000" alt="Screenshot 2024-12-16 at 10 52 12 PM" src="https://github.com/user-attachments/assets/b9df133c-7b9b-464d-a2f3-588ccd010665" />
+
+When the grade of loans deteriorates, the distribution of returns becomes larger, which indicates that higher-grade loans have more stable returns. Additionally, as the grade of loans deteriorates, the percentage of charged-off loans increases. However, surprisingly, even with defaults and write-offs, there is a 50% recovery on the initial lending amount.
+
+
+
 ## Reference
 Chang, A. H., Yang, L. K., Tsaih, R. H., & Lin, S. K. (2022). Machine learning and artificial neural networks to construct P2P lending credit-scoring model: A case using Lending Club data. Quantitative Finance and Economics, 6(2), 303-325.​
 
