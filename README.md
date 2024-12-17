@@ -82,8 +82,8 @@ Specifically, we plan to use Ridge regression, Lasso regression, Gradient boosti
 
 ### Linear Approach: Standardized Lasso Regression
 * Density Plot
-   * <details>
-      <img width="400" alt="Screenshot 2024-12-16 at 6 22 09 PM" src="https://github.com/user-attachments/assets/b2f4116a-556c-465a-ba4e-b93b15b653d6" />
+   <img width="400" alt="Screenshot 2024-12-16 at 6 22 09 PM" src="https://github.com/user-attachments/assets/b2f4116a-556c-465a-ba4e-b93b15b653d6" />
+      
   * <details>
      <summary>Click to Expand Image</summary>
       <img width="400" alt="Screenshot 2024-12-16 at 6 30 57 PM" src="https://github.com/user-attachments/assets/e8095dbd-a81d-4e71-908d-c48868f30cb6" />
