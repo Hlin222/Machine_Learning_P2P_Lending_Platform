@@ -92,9 +92,9 @@ The findings of our study are generally good with standardized lasso regression 
 ## Conclusion
 In this project, we applied a combination of supervised and unsupervised learning techniques to analyze asset-backed security (ABS) tranches within a peer-to-peer (P2P) lending platform. We identified  standardized lasso regression and gradient boosting to have the best predictive power. It suggests a large improvement from linear model to non-linear mode, reflecting the complexity of the dataset and the problem we want to address. While we use most methods learned in-class, we can adjust parameters in the future to get potentially better models. 
 
-## Expected Return(including default and write off and exclusing current)
+### Expected Return(including default and write off and exclusing current)
 
-<details> 
+* <details> 
      <summary>Expected Return Visualization</summary>
       <img width="1181" alt="Screenshot 2024-12-16 at 10 50 38 PM" src="https://github.com/user-attachments/assets/8298fedd-9c46-4b0b-85a4-b96c37cbe01a" />
       <img width="742" alt="Screenshot 2024-12-16 at 10 48 34 PM" src="https://github.com/user-attachments/assets/05f9f39f-0f8a-4f6b-b3c7-c848af68f12b" />
@@ -103,19 +103,19 @@ In this project, we applied a combination of supervised and unsupervised learnin
 When the grade of loans deteriorates, the distribution of returns becomes larger, which indicates that higher-grade loans have more stable returns. Additionally, as the grade of loans deteriorates, the percentage of charged-off loans increases. However, surprisingly, even with defaults and write-offs, there is a 50% recovery on the initial lending amount.
 
 We ran a generalized linear model with lasso regularization to predict the expected return.
-<details> 
+* <details> 
      <summary>Click to Expand Lasso</summary>
       <img width="579" alt="Screenshot 2024-12-16 at 11 32 19 PM" src="https://github.com/user-attachments/assets/8631766b-220b-455c-b4db-a93907c5ce6c" />
 
 we get a RMSE of 0.2206, which is quite unaccurate. Then we run a gradient boosting model:
-<details> 
+* <details> 
      <summary>Click to Expand Gradient Boosting</summary>
       <img width="555" alt="Screenshot 2024-12-17 at 12 14 28 AM" src="https://github.com/user-attachments/assets/186d5a10-bcab-491c-ab16-04202a43cdc0" />
      <summary>Click to Expand Gradient Boosting Importance</summary>
       <img width="244" alt="Screenshot 2024-12-17 at 12 14 54 AM" src="https://github.com/user-attachments/assets/c80ba758-dfcc-4da4-9be6-ac5004f82131" />
 
-## ABS Tranches
-<details> 
+### ABS Tranches
+* <details> 
      <summary>Click to Expand ABS Summary</summary>
       <img width="720" alt="Screenshot 2024-12-17 at 12 18 18 AM" src="https://github.com/user-attachments/assets/825cb339-ecff-44b7-8862-2a491fd43a97" />
      <summary>Click to Expand ABS Details</summary>
