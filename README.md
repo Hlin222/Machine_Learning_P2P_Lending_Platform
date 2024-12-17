@@ -42,6 +42,28 @@ Specifically, we plan to use Ridge regression, Lasso regression, Gradient boosti
   
   Standardization rescales all predictor variables to have a mean of 0 and a standard deviation of 1. This makes sure that all variables contribute proportionally to the model, regardless of their original scale.​ Without standardization, variables with larger ranges would dominate the model's coefficients, while smaller-scale variables can be ignored.
 
+### Non-Linear Approach: Gradient Boosting
+* Density Plot
+   * <details> n_estimators=100, ​max_depth=5
+     <summary>Click to Expand Image</summary>
+      <img width="355" alt="Screenshot 2024-12-16 at 9 49 59 PM" src="https://github.com/user-attachments/assets/3980505f-1363-4a17-a4c2-60ab9cd103aa" />
+   * <details> n_estimators=100, ​max_depth=5
+     <summary>Click to Expand Image</summary>
+      <img width="355" alt="Screenshot 2024-12-16 at 9 49 59 PM" src="https://github.com/user-attachments/assets/3980505f-1363-4a17-a4c2-60ab9cd103aa" />
+* **Gradient Boosting** V.S Random Forest
+  
+  From Lasso regression, we observe large residuals. As an iterative method, GB is better at handling such issue by refining prediction.​ For Random forest, once trained, Random Forest trees do not adapt to errors. This independence limits its ability to focus on and correct large residuals effectively, making it less flexible than Gradient Boosting for iterative error correction.​ As our dataset is large enough, there is no concern of overfitting. Large 'n_estimators' also reduce the risk by lowering learning rate.
+
+   With the same number of estimators, increasing tree depth increases model accuracy and R^2.​ Overall, random forest underperforms gradient boosting, which aligns with our previous analysis 
+
+
+## Results
+
+## Discussion
+
+## Conclusion
+
+
 
 
 
