@@ -47,21 +47,55 @@ Specifically, we plan to use Ridge regression, Lasso regression, Gradient boosti
    * <details> n_estimators=100, ​max_depth=5
      <summary>Click to Expand Image</summary>
       <img width="355" alt="Screenshot 2024-12-16 at 9 49 59 PM" src="https://github.com/user-attachments/assets/3980505f-1363-4a17-a4c2-60ab9cd103aa" />
-   * <details> n_estimators=100, ​max_depth=5
+   * <details> n_estimators=100, ​max_depth=10
      <summary>Click to Expand Image</summary>
-      <img width="355" alt="Screenshot 2024-12-16 at 9 49 59 PM" src="https://github.com/user-attachments/assets/3980505f-1363-4a17-a4c2-60ab9cd103aa" />
+      <img width="384" alt="Screenshot 2024-12-16 at 9 59 50 PM" src="https://github.com/user-attachments/assets/1c18b3ab-6d93-4e33-bf12-4fd53b752898" />
+
 * **Gradient Boosting** V.S Random Forest
   
   From Lasso regression, we observe large residuals. As an iterative method, GB is better at handling such issue by refining prediction.​ For Random forest, once trained, Random Forest trees do not adapt to errors. This independence limits its ability to focus on and correct large residuals effectively, making it less flexible than Gradient Boosting for iterative error correction.​ As our dataset is large enough, there is no concern of overfitting. Large 'n_estimators' also reduce the risk by lowering learning rate.
 
-   With the same number of estimators, increasing tree depth increases model accuracy and R^2.​ Overall, random forest underperforms gradient boosting, which aligns with our previous analysis 
+   With the same number of estimators, increasing tree depth increases model accuracy and R^2.​ Overall, random forest underperforms gradient boosting, which aligns with our previous analysis.
 
 
 ## Results
+### Findings from the Standardized Lasso Regression
+* <details> 
+     <summary>Click to Expand Image</summary>
+      <img width="587" alt="Screenshot 2024-12-16 at 10 05 14 PM" src="https://github.com/user-attachments/assets/468c2d62-202f-4601-8062-820193ae2447" />
+
+The bar graph from the lasso regression showed that the coefficients increases by issue year. This trends show that loans issued in more recent year (2016-2018) had a stronger impact on the model's prediction. 
+
+* <details> 
+     <summary>Click to Expand Image</summary>
+      <img width="553" alt="Screenshot 2024-12-16 at 10 06 38 PM" src="https://github.com/user-attachments/assets/9e3f8197-c67d-4318-b103-89c32fe5372c" />
+This is the US interest rate, the trend shows that the rate remained around 0 from 2009 to around 2016, after which it began to rise gradually. ​This increase in interest rates in the US interest rate aligns with the upward trend that we find with the lasso regression. Some of the possible reasons could be that borrowers who seek out loans during periods of rising interest rates might have experienced greater financial strain.
+
+* <details> 
+     <summary>Click to Expand Image</summary>
+      <img width="606" alt="Screenshot 2024-12-16 at 10 09 26 PM" src="https://github.com/user-attachments/assets/bc70fdc4-f4d9-4092-b61e-58e16d1f094f" />
+Loans issued in August and September has the highest positive coefficients, while loans in February have the highest negative coefficients. ​
+Some of the possible reasons for the trend could because that borrowers in August or September may display behaviors leading to better performance, such as financial stability or better repayment.​ What's more, LendingClub may have changed lending standards during these months, influencing loan performance
+
+* <details> 
+     <summary>Click to Expand Image</summary>
+      <img width="335" alt="Screenshot 2024-12-16 at 10 12 38 PM" src="https://github.com/user-attachments/assets/379f54d3-8781-4ed9-b21f-743f50c0310d" />
+      <img width="306" alt="Screenshot 2024-12-16 at 10 13 10 PM" src="https://github.com/user-attachments/assets/d40e6e14-5090-4a68-8a75-b6b59deab350" />
+Findings from the standardized lasso regression showed that location have minor impact and purpose have significant impact.
+
+
+
 
 ## Discussion
+The findings of our study are generally good with standardized lasso regression presenting a Test RMSE of 3.51%; and Gradient boosting presents a Test RMSE of 2.805%.The RMSE for both models are relatively low, suggesting relatively strong predictive power. ​The improvement from 3.51% to 2.805% between the linear and nonlinear models is significant, justifying the use of Gradient Boosting for better accuracy.  ​Previous research (Chang et al., 2022) also found that XGBoost was the most outstanding method with an accuracy around 88%.
 
 ## Conclusion
+In this project, we applied a combination of supervised and unsupervised learning techniques to analyze asset-backed security (ABS) tranches within a peer-to-peer (P2P) lending platform. We identified  standardized lasso regression and gradient boosting to have the best predictive power. It suggests a large improvement from linear model to non-linear mode, reflecting the complexity of the dataset and the problem we want to address. While we use most methods learned in-class, we can adjust parameters in the future to get potentially better models. 
+
+## Reference
+Chang, A. H., Yang, L. K., Tsaih, R. H., & Lin, S. K. (2022). Machine learning and artificial neural networks to construct P2P lending credit-scoring model: A case using Lending Club data. Quantitative Finance and Economics, 6(2), 303-325.​
+
+Balyuk, Tetyana and Davydenko, Sergei, Reintermediation in FinTech: Evidence from Online Lending (January 20, 2023). Michael J. Brennan Irish Finance Working Paper Series Research Paper No. 18-17, 31st Australasian Finance and Banking Conference 2018, Available at SSRN: https://ssrn.com/abstract=3189236 or http://dx.doi.org/10.2139/ssrn.3189236
 
 
 
