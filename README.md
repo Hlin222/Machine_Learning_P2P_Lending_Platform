@@ -102,7 +102,8 @@ In this project, we applied a combination of supervised and unsupervised learnin
 
 When the grade of loans deteriorates, the distribution of returns becomes larger, which indicates that higher-grade loans have more stable returns. Additionally, as the grade of loans deteriorates, the percentage of charged-off loans increases. However, surprisingly, even with defaults and write-offs, there is a 50% recovery on the initial lending amount.
 
-We ran a generalized linear model with lasso regularization to predict the expected return
+We ran a generalized linear model with lasso regularization to predict the expected return.
+<img width="579" alt="Screenshot 2024-12-16 at 11 32 19 PM" src="https://github.com/user-attachments/assets/8631766b-220b-455c-b4db-a93907c5ce6c" />
 
 
 ## Reference
